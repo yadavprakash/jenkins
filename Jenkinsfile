@@ -1,8 +1,6 @@
-node ('local') {
-    try {
-
-
-//------------------------------------------------------Code-Clone-----------------------------------------------------------------//
-
-  stage 'Cloning Git'
-url:'git@github.com:yadavprakash/jenkins.git', branch:'master'
+git(
+    url: "git@github.com:yadavprakash/jenkins.git",
+    branch: "master",
+    changelog: true,
+    poll: true
+)
