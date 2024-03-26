@@ -4,4 +4,4 @@ node ('local') {
 //------------------------------------------------------Code-Clone-----------------------------------------------------------------//
 
   stage 'Cloning Git'
-  url:'git@github.com:yadavprakash/jenkins.git', branch:'master'
+  url:'https://github.com/yadavprakash/jenkins.git', branch:'master'
