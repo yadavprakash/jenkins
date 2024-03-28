@@ -5,9 +5,11 @@
 //
 //   stage 'Cloning Git'
 //   url:'https://github.com/yadavprakash/jenkins.git', branch:'master'
+//
+// //--------------------------ansiblePlaybook run ------------
+//
+//   stage 'run ansible'
 
-pipeline {
-    agent any
 
     stages {
         stage('Checkout') {
@@ -27,7 +29,7 @@ pipeline {
                 // Run Ansible playbook
                 ansiblePlaybook(
                     playbook: 'ansible/test.yml',
-                    inventory: 'ansible/inventory/hosts.ini',
+                    inventory: 'ansible/inventory',
                 )
             }
         }
