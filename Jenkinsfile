@@ -6,10 +6,6 @@ node ('local') {
   stage 'Cloning Git'
   url:'https://github.com/yadavprakash/jenkins.git', branch:'master'
 
-//--------------------------ansiblePlaybook run ------------
-
-  stage 'run ansible'
-  sh 'ansible-playbook ansible/test.yaml'
 
 
 // pipeline {
