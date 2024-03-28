@@ -9,7 +9,7 @@ node ('local') {
 //--------------------------ansiblePlaybook run ------------
 
   stage 'run ansible'
-    'mkdir yadavprakash'
+  sh 'ansible-playbook ansible/test.yml'
 
 
 // pipeline {
