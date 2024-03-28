@@ -9,7 +9,7 @@ node ('local') {
 //--------------------------ansiblePlaybook run ------------
 
   stage 'run ansible'
-   wget 'ansible-playbook ansible/test.yml'
+    'ansible-playbook ansible/test.yml'
 
 
 // pipeline {
